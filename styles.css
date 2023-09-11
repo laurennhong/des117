@@ -1,5 +1,5 @@
 body {
-    font-family: helvetica;
+    font-family: 'Kanit', sans-serif;
     background: url(plaid.jpeg);
     display:flex;
 }
@@ -26,10 +26,10 @@ h1 {
 }
 
 h2 {
-    font-size:2em;
+    font-size:1.5em;
     flex:1;
     background-color: pink;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     margin:auto;
     width: 550px;
     height: 50px;
@@ -41,7 +41,7 @@ h2 {
     border-radius: 15px;
 }
 
-ol, #usetools, #intart {
+ol {
     flex:1;
     background-color: darkmagenta; 
     width: 550px;
@@ -52,36 +52,19 @@ ol, #usetools, #intart {
     padding-inline-start: 0px;
     line-height: 30px;
     border-radius: 15px;
-}
-
-ol {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding:15px;
 }
 ol li {
     list-style-type: none;
     flex-direction: column;
     margin:auto;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1em;
+    text-align: left;
 }
-
 
 h3 {
     font-size:22px;
-}
-
-#usetools, #intart {
-    margin-bottom: 30px;
-    padding-top: 10px;
-    font-size: 18px;
-    padding-bottom: 30px;
-}
-
-ul {
-    list-style-type: none;
-    text-align: center;
-    padding-inline-start: 0px;
 }
 
 a:link {
@@ -108,7 +91,7 @@ footer {
 
 article section ol {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 #small {
@@ -284,42 +267,37 @@ article section ol {
 }
 
 @media only screen and (min-width: 600px) {
+    
     h1{
-        width:600px;
-        height: 100px;
-        font-size: 37px;
-        padding-top: 15px;
-    }
-    h2 {
-        width: 700px;
-        margin-top: 90px;
-    }
-
-    ol li {
-        font-size: 25px;
-    }
-
-    ol, #usetools, #intart {
         width:700px;
-        padding-top: 0px;
+        height: 150px;
+        font-size: 50px;
+        padding-top: 20px;
+        line-height: 1.2;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1em auto;
+    }
+    
+    article section {
+        width:fit-content;
+        padding: 1.3em;
+    }
+   h2, ol {
+        width: 400px;
     }
 
     ol {
         padding-top: 10px;
-    }
-
-    #usetools, #intart {
-        padding-bottom: 25px;
-        line-height: 2em;
-        font-size: 25px;
-    }
-
-    h3 {
-        font-size:25px;
+        height: 300px;
     }
 
     footer {
-        width:750;
+        width:90%;
+        margin:auto;
         margin-bottom: 100px;
         grid-template-columns: 1fr 1fr 1fr;
     }
