@@ -1,0 +1,326 @@
+body {
+    font-family: helvetica;
+    background: url(plaid.jpeg);
+    display:flex;
+}
+
+div {
+    margin:auto;
+}
+
+h1 {
+    flex:1;
+    margin:auto;
+    background: linear-gradient(to right, rgb(107, 1, 107), rgb(223, 11, 223));
+    border-radius: 50%;
+    width: 400px;
+    height: 80px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    padding-bottom: 10px;
+    border: 6px solid pink;
+    color: pink;
+}
+
+h2 {
+    font-size:2em;
+    flex:1;
+    background-color: pink;
+    padding: 5px;
+    margin:auto;
+    width: 550px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    border: 6px solid darkmagenta;
+    margin-top: 60px;
+    color: darkmagenta;
+    border-radius: 15px;
+}
+
+ol, #usetools, #intart {
+    flex:1;
+    background-color: darkmagenta; 
+    width: 550px;
+    border: 6px solid pink;
+    margin: auto;
+    margin-top: 15px;
+    color: pink;
+    padding-inline-start: 0px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+
+ol {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ol li {
+    list-style-type: none;
+    flex-direction: column;
+    margin:auto;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+h3 {
+    font-size:22px;
+}
+
+#usetools, #intart {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+a:link {
+    color: pink;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border: 3px solid pink;
+    padding: 5px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 200px;
+    color: pink;
+    background-color: darkmagenta;
+    border-radius: 15px;
+}
+
+article section ol {
+    text-align: center;
+    font-size: 24px;
+}
+
+#small {
+    position: fixed;
+    top:20px;
+    left: 120px;
+    color: darkmagenta;
+}
+
+#medium {
+    position: fixed;
+    top:120px;
+    left: 5px;
+    color: darkmagenta;
+
+}
+
+#big {
+    position: fixed;
+    top:10px;
+    left: 10px;
+    color: pink;
+}
+#smallout {
+    position: fixed;
+    top:20px;
+    left: 120px;
+    color: pink;
+}
+
+#mediumout {
+    position: fixed;
+    top:120px;
+    left: 5px;
+    color: pink;
+
+}
+
+#bigout {
+    position: fixed;
+    top:10px;
+    left: 10px;
+    color: darkmagenta;
+}
+
+#small2 {
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    color: darkmagenta;
+}
+
+#medium2 {
+    position: fixed;
+    top: 120px;
+    right: 5px;
+    color: darkmagenta;
+
+}
+
+#big2 {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: pink;
+}
+#smallout2 {
+    position: fixed;
+    top: 20px;
+    right: 120px;
+    color: pink;
+}
+
+#mediumout2 {
+    position: fixed;
+    top:120px;
+    right: 5px;
+    color: pink;
+
+}
+
+#bigout2 {
+    position: fixed;
+    top:10px;
+    right: 10px;
+    color: darkmagenta;
+}
+
+#smallbot {
+    position: fixed;
+    bottom:20px;
+    left: 120px;
+    color: darkmagenta;
+}
+
+#mediumbot {
+    position: fixed;
+    bottom:120px;
+    left: 5px;
+    color: darkmagenta;
+
+}
+
+#bigbot {
+    position: fixed;
+    bottom:10px;
+    left: 10px;
+    color: pink;
+}
+#smalloutbot {
+    position: fixed;
+    bottom:20px;
+    left: 120px;
+    color: pink;
+}
+
+#mediumoutbot {
+    position: fixed;
+    bottom:120px;
+    left: 5px;
+    color: pink;
+
+}
+
+#bigoutbot {
+    position: fixed;
+    bottom:10px;
+    left: 10px;
+    color: darkmagenta;
+}
+
+#small2bot {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    color: darkmagenta;
+}
+
+#medium2bot {
+    position: fixed;
+    bottom: 120px;
+    right: 5px;
+    color: darkmagenta;
+
+}
+
+#big2bot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: pink;
+}
+#smallout2bot {
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    color: pink;
+}
+
+#mediumout2bot {
+    position: fixed;
+    bottom:120px;
+    right: 5px;
+    color: pink;
+
+}
+
+#bigout2bot {
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    color: darkmagenta;
+}
+
+@media only screen and (min-width: 600px) {
+    h1{
+        width:600px;
+        height: 100px;
+        font-size: 37px;
+        padding-top: 15px;
+    }
+    h2 {
+        width: 700px;
+        margin-top: 90px;
+    }
+
+    ol li {
+        font-size: 25px;
+    }
+
+    ol, #usetools, #intart {
+        width:700px;
+        padding-top: 0px;
+    }
+
+    ol {
+        padding-top: 10px;
+    }
+
+    #usetools, #intart {
+        padding-bottom: 25px;
+        line-height: 2em;
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size:25px;
+    }
+
+    footer {
+        width:750;
+        margin-bottom: 100px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

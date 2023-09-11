@@ -1,0 +1,48 @@
+body {
+    font-family: helvetica;
+    background: url(plaid.jpeg);
+    color: rgba(111,77,33);
+}
+
+h2 {
+    font-family: 'Castoro', serif;
+    font-size:3em;
+    display: flex;
+    background-color: pink;
+    padding: 5px;
+    width: 500px;
+    border-radius: 20px;
+    margin:auto;
+    text-align:center;
+    color: darkmagenta;
+}
+
+h3{
+    display: flex;
+    background-color: rgba(255,249,182,0.5);
+    padding: 5px;
+    margin:auto;
+}
+
+ol {
+    display: flex;
+    padding: 50px;
+    background-color: rgba(255,255,255, 0.8); 
+}
+
+
+footer {
+    padding-top: 100px;
+    display: flex;
+    background-color: rgba(255,255,255,0.5);
+    padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    #page { width: 800px; }
+    section { display:flex; }
+    .half { flex:50%; }
+    .half:first-of-type { margin-left: 20px; }
+    li { width: 200px; }
+    aside li { display:flex; flex:1; }
+}

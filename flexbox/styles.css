@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.box,
+.box-small,
+.box-med {
+    height: 300px;
+    background-color: pink;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    h1, 
+    .box {
+        flex:100%;
+    }
+
+    .box-med {
+        flex:1;
+    }
+    .box-small {
+        flex:1;
+    }
+    .row {
+        flex:100%;
+        display:flex;
+    }
+}

@@ -1,0 +1,160 @@
+body {
+    background: url(images/backgrounds/green_background.png);
+    margin: auto;
+    margin-top: 100px;
+}
+
+#aboutme {
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-family: 'Gochi Hand', cursive;
+    font-style: italic;
+}
+
+#aboutme a:link {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+#aboutme a:visited {
+    color: darkolivegreen;
+}
+
+#note {
+    display:block;
+    margin:auto;
+    padding: 20px;
+    font-family: 'Indie Flower', cursive;
+    background: beige;
+    width: 80%;
+    border-radius: 10px;
+    text-align: justify;
+    -webkit-box-shadow: 0px 0px 14px -6px #000000; 
+    box-shadow: 0px 0px 14px -6px #000000;
+}
+
+#notetitle {
+    font-family: 'Pacifico', cursive;
+}
+
+#homebutton {
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-family: 'Gochi Hand', cursive;
+    font-style: italic;
+}
+
+#homebutton a:link {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+#homebutton a:visited {
+    color: darkolivegreen;
+}
+
+header h1 {
+    background: lightgoldenrodyellow;
+    padding: 10px; 
+    width: 200px;
+    height: 30px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    top: 1px;
+    left: calc(50% - 100px);
+    -webkit-box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.69); 
+    box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.69);
+}
+
+
+#months {
+    background: url("images/backgrounds/rippedpaper.png");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 90%;
+    margin:auto;
+}
+#months article {
+    flex:1;
+    padding-top: 100px;
+}
+#months article img {
+    width: 75px;
+}
+
+#months div {
+    display: flex;
+    width: 100%;
+}
+
+#months article h1 {
+    font-size: 18px;
+    font-family: 'Gochi Hand', cursive;
+    padding-bottom: 90px;
+}
+
+#div1 article h1 {
+    padding-bottom: 70px;
+}
+
+#div2 article {
+    padding-top: 0px;
+}
+
+footer {
+    margin: auto;
+    margin-top: 125px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+}
+
+footer a:link {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: darkolivegreen;
+}
+
+@media only screen and (min-width: 1000px) {
+    header h1 {
+        width: 500px;
+        height: 75px;
+        margin-top: 60px;
+        line-height: 75px;
+        border-radius: 30px;
+        position: absolute;
+        top: 10px;
+        left: calc(50% - 250px);
+        font-size: 40px;
+    }
+    #months {
+        margin-top: 80px;
+    }
+
+    #months article img {
+        width: 150px;
+    }
+    
+    #months article h1 {
+        font-size: default;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #months article h1 {
+        font-size: 14px;
+    }
+}

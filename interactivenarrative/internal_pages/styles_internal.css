@@ -1,0 +1,265 @@
+body {
+    background: url(../images/backgrounds/ricepaper_background.png);
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+
+#homebutton {
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-family: 'Gochi Hand', cursive;
+    font-style: italic;
+}
+
+#homebutton a:link {
+    color: rgb(100, 88, 71);
+    text-decoration: none;
+}
+
+#homebutton a:visited {
+    color: rgb(100, 88, 71);
+}
+
+header {
+    background: url("../images/tape.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 100%;
+    text-align: center;
+    font-family: 'Puppies Play', cursive;
+    font-size: 28px;
+    font-style: italic;
+    height: 150px;
+    line-height:130px; 
+}
+
+header h1 {
+    margin: 0px;
+}
+
+
+section div {
+    position: relative;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+
+section div img {
+    display:block;
+    margin:auto;
+    border-radius: 20px;
+}
+
+section div div {
+    opacity: 0;
+    transition: .5s ease-in-out;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100%;
+    background-color: beige;
+    border-radius: 20px;
+    font-family: 'Indie Flower', cursive;
+    -webkit-box-shadow: 0px 0px 14px -6px #000000; 
+    box-shadow: 0px 0px 14px -10px #000000;
+}
+
+section div:hover div {
+    opacity: 1;
+}
+
+section div div div p {
+    padding:10px;
+    text-align: justify;
+    line-height: 15px;
+    font-size: 13px;
+}
+
+.date {
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 0px;
+}
+
+nav {
+    margin:auto;
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    padding-inline-start: 0px;
+    grid-gap: 10px;
+}
+
+nav ul li {
+    font-family: 'Gochi Hand', cursive;
+    font-style: italic;
+}
+
+nav ul li a:link {
+    color:rgb(100, 88, 71);
+    text-decoration: none;
+}
+
+nav ul li a:visited {
+    color:rgb(100, 88, 71);
+}
+
+#next {
+    text-align: right;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+    font-family: 'Gochi Hand', cursive;
+}
+
+footer a:link {
+    color: rgb(100, 88, 71);
+    text-decoration: none;
+    
+}
+footer a:visited {
+    color: rgb(100, 88, 71);
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        background-size: 35% 100%;
+    }
+
+    section div img {
+        width: 100%
+    }
+
+    section div div div p {
+        font-size: 12px;
+        line-height: 10px;
+        margin-top:0px;
+    }
+    
+    .date {
+        font-size:13px;
+    }
+    
+    #aprilgrid1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #aprilgrid2 {
+        display:grid;
+        grid-template-columns: 1.33fr 1fr 1.33fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #maygrid1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #maygrid2 {
+        display:grid;
+        grid-template-columns: 1.33fr 1fr 1.33fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #junegrid1 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #junegrid2 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #julygrid1 {
+        display:grid;
+        grid-template-columns: 1.33fr 1fr 1.33fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #julygrid2 {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #augustgrid1 {
+        display:grid;
+        grid-template-columns: 1.33fr 1fr 1.33fr 1.33fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #augustgrid2 {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #septgrid1 {
+        display:grid;
+        grid-template-columns: 1fr 1.33fr 1.13fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+
+    #septgrid2 {
+        display:grid;
+        grid-template-columns: 1.33fr 1fr 1.33fr;
+        grid-gap: 20px;
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    section div div div p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 25px;
+    }
+    
+    .date {
+        font-size:20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin-right: 20px;
+        margin-left:20px;
+    }
+        
+    section div img {
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    
+    nav ul {
+        margin-top: 100px;
+    }
+}
